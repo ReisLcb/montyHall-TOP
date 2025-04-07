@@ -1,0 +1,7 @@
+{
+  "name": "montyHall-TOP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
