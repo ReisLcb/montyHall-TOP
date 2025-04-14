@@ -15,7 +15,7 @@
 
   <div id="container">
     <div *ngFor="let porta of portas">
-      <ion-button (click)="abrirPorta(num)">Porta {{ porta }}</ion-button>
+      <ion-button (click)="abrirPorta(porta.id)" id="porta.id">Porta {{ porta.id }}</ion-button>
     </div>
   </div>
 </ion-content>
