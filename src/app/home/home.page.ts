@@ -32,8 +32,8 @@ export class HomePage {
     this.porta = this.portas.find((porta) => porta.id == num)
     
     do{
-      numero = Math.floor(Math.random() * 3) + 1
-    }while(numero == this.porta!.id || numero == this.idPortaPremio)
+      numero = Math.floor(Math.random() * 4)
+    }while(numero == 0 || numero == this.porta!.id || numero == this.idPortaPremio)
       
     if(!this.validacao){
       this.escolhaUser = num
@@ -45,7 +45,7 @@ export class HomePage {
 
   escolherOuManter(){
     if(!this.validacao){
-      let respostaUser = prompt("Deseja manter a porta?\n1-SIM 2-NÃO")
+      let respostaUser = prompt("Deseja trocar de porta?\n1-SIM 2-NÃO")
       switch(respostaUser){
         case "1":
           this.validacao = true
