@@ -33,7 +33,7 @@ export class HomePage {
     
     do{
       numero = Math.floor(Math.random() * 3) + 1
-    }while(numero == 0 || numero == this.porta!.id || numero == this.idPortaPremio)
+    }while(numero == this.porta!.id || numero == this.idPortaPremio)
       
     if(!this.validacao){
       this.escolhaUser = num
