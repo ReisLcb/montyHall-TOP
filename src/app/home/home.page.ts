@@ -23,7 +23,7 @@ export class HomePage {
 
   constructor() {
     this.portas.push({id: 1, premio: false}, {id: 2, premio: false}, {id: 3, premio: false})
-    this.portas[Math.floor(Math.random() * 3)+1].premio = true  
+    this.portas[Math.floor(Math.random() * 3)].premio = true  
     this.idPortaPremio = this.portas.find((porta) => porta.premio)!.id
   }
 
@@ -32,7 +32,7 @@ export class HomePage {
     this.porta = this.portas.find((porta) => porta.id == num)
     
     do{
-      numero = Math.floor(Math.random() * 4)
+      numero = Math.floor(Math.random() * 3) + 1
     }while(numero == 0 || numero == this.porta!.id || numero == this.idPortaPremio)
       
     if(!this.validacao){
